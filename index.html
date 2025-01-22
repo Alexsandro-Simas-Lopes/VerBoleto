@@ -17,16 +17,16 @@
             <header class="header row g-3 p-2" style="justify-content: space-around;">
                 <h1 class="price">Valor a pagar</h1>
                 <div class="col-md-4">
-                    <label for="price" class="form-label">VALOR</label>
-                    <input type="number" class="form-control" id="price">
+                    <label for="price"  placeholder="R$ 0,00" class="form-label">VALOR</label>
+                    <input type="contabil" class="form-control" id="price">
                 </div>
                 <div class="col-md-4">
                     <label for="dataVenc" class="form-label">DIA DO VENCIMENTO</label>
-                    <input type="datetime" class="form-control" id="dataVenc">
+                    <input type="date" class="form-control" id="dataVenc">
                 </div>
                 <div class="col-md-4">
                     <label for="diaHoje" class="form-label">DIA DE HOHE</label>
-                    <input type="datetime" class="form-control" id="diaHoje">
+                    <input type="date" class="form-control" id="diaHoje">
                 </div>
             </header>
             <div class="select-body">
@@ -34,13 +34,7 @@
                     <div class="text-center">
                         <button type="button" id="infDados">Informar dados</button>
                     </div>
-                    <form id="payment-form">
-                        <div class="text_Pay p-3">
-                            <label class="form-label" for="floatingInputDisabled">
-                                <strong>TOTAL:</strong><div id="price-total">R$ 0.00</div>
-                            </label>
-                        </div>
-                    </form>
+                    <div id="resultado"></div>
                 </div>
 
         <script type="text/Javascript" src="/Payment/script.js"></script>
